@@ -1,3 +1,17 @@
+#!/usr/bin/env python
+
+"""
+    ten_volt_test.py
+        Calculates whether the +/- 10V values fall within
+        +/-0.5% nominal value for the instrumentation
+
+        To run:
+            ten_volt_test.py val1 val2 bit
+        where val1 and val2 are minimum and maximum counts
+        determined from xmax window and bit refers to whether 
+        the datalogger is 24 or 26 bit as this changes the nominal
+        value for comparison.
+"""
 import sys
 
 def main():
