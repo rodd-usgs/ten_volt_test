@@ -35,7 +35,7 @@ def ten_volt_test(x, y, bit):
     if perc <= 0.5 or perc >= -0.5:
         print('{:f} is within 0.5% of nominal value {:f}: {:4f}'.format(val/10, test_val, perc))
     else:
-        print('{:f} is within 0.5% of nominal value {:f}: {:4f}'.format(val/10, test_val, perc))
+        print('{:f} is not within 0.5% of nominal value {:f}: {:4f}'.format(val/10, test_val, perc))
     return round(perc, 4)
 
 def check_ten_volt_test():
