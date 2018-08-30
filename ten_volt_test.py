@@ -32,7 +32,7 @@ def ten_volt_test(x, y, bit):
     elif bit == 26:
         test_val = 2**26./40
     perc = (1 - (val/(test_val*10)))*100
-    if perc <= 0.5 or perc >= -0.5:
+    if perc <= 0.5 and perc >= -0.5:
         print('{:f} is within 0.5% of nominal value {:f}: {:4f}'.format(val/10, test_val, perc))
     else:
         print('{:f} is not within 0.5% of nominal value {:f}: {:4f}'.format(val/10, test_val, perc))
